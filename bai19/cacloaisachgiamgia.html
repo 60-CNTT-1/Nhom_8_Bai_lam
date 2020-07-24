@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bai19.css">
+</head>
+<body>
+    <div id="main">
+        <div id="head">
+            <img src="anh/logo.jpg">
+        </div>       
+        <div id="left">
+            <table>
+                <tr>
+                    <td id="_1">
+                        <label for="fname">Tên đăng nhập:</label>
+                        <input type="text" id="fname" name="fname" size="20"><br><br>
+                        <label for="lname">Mật khẩu:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="password"  name="lname" size="20"><br><br>
+                        <input type="submit" value="Đăng nhập">
+                        <input type="submit" value="Phục hồi">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="_2">
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                              <input type="text" placeholder="Tìm kiếm.." name="search">
+                              <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="_3">
+                        <h3 id="text_1"><b> Menu chính:</b></h3>
+                        <ul >
+                            <li class="xz">
+                                <a href="Kinhte.html" class="link" target="main-content">Kinh tế</a>
+                            </li>
+                            <li class="xz">
+                                <a href="Tinhoc.html" class="link" target="main-content">Tin học</a>
+                            </li>
+                            <li class="xz">
+                                <a href="Phapluat.html" class="link" target="main-content">Pháp luật</a>
+                            </li>
+
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="content">
+            <table>
+                <tr>
+                    <td id="_4" colspan="2">
+                        <div style="height: 30px;">
+                            <span class="nav-date-time"> Ngày <span id="days"></span> tháng <span id="month"></span> năm <span id="year"></span></span> 
+                        </div>
+                        <script>
+                            var n = new Date();
+                            var d = n.getUTCDate();
+                            document.getElementById("days").innerHTML = d;
+                            var m = n.getUTCMonth() + 1;
+                            document.getElementById("month").innerHTML = m;
+                            var y = n.getUTCFullYear();
+                            document.getElementById("year").innerHTML = y;
+                        </script>
+                        <hr>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="bai19.html">quay lại trang chủ</a></li>
+                                <li><a href="Sachbanchay.html">sách bán chạy</a></li>
+                                <li><a href="Sachgiamgia.html">sách giảm giá</a></li>
+                            </ul>
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="_5">
+                        <a href="https://sachphapluat.net/sach-luat-thanh-tra-luat-phong-chong-tham-nhung-luat-thuc-hanh-tiet-kiem-chong-lang-phi">SÁCH LUẬT THANH TRA - LUẬT PHÒNG, CHỐNG THAM NHŨNG, LUẬT THỰC HÀNH</a>
+                    </td>
+                    <td id="_6">
+                        <h3 id="text_2"><b> Phần phụ giới thiệu:</b></h3>
+                        <ul >
+                            <li class="xz">
+                                <a href="cacloaisachbanchay.html" class="link" target="main-content">các loại sách bán chạy</a>
+                            </li>
+                            <li class="xz">
+                                <a href="cacloaisachgiamgia.html" class="link" target="main-content">các loại sách giảm giá</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <p>Thông tin về bản quyền WEBSITE</p>
+            <P>Thông tin liên hệ: nhom1@gmail.com</P>
+        </div>
+    </div>
+</body>
+</html>
